@@ -94,6 +94,12 @@ footer p {
   margin-left: 6rem;
 }
 
+footer p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--font);
+}
+
 @media only screen and (max-width: 768px) {
   main {
     margin: 6rem 1.5rem 1.5rem 1.5rem;
