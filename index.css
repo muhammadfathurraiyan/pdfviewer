@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --warna-utama: #ffffff;
+  --bg: #f4f4f4;
+  --font: rgb(33 33 33);
+  --garis: rgb(150, 150, 150);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--font);
+}
+
+header {
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--warna-utama);
+  border-bottom: 1px solid var(--garis);
+  position: fixed;
+}
+
+header h1 {
+  margin-left: 6rem;
+}
+
+main {
+  background-color: var(--bg);
+  margin: 6rem;
+}
+
+main .tag-line {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section iframe {
+  padding: 1rem;
+  background-color: var(--font);
+  border-radius: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.button {
+  background-color: var(--font);
+  color: var(--warna-utama);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+footer {
+  margin-top: 2rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--warna-utama);
+  border-top: 1px solid var(--garis);
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 6rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  main .tag-line{
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 0.5rem;
+  }
+
+  main section iframe {
+    height: 75vh;
+  }
+
+  header h1 {
+    margin-left: 1.5rem;
+  }
+
+  footer p {
+    margin-left: 1.5rem;
+    font-size: 10px;
+  }
+  
+}
